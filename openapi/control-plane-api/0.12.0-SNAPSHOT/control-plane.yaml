@@ -2,6 +2,9 @@ openapi: 3.0.1
 info:
   title: Tractus-X EDC control-plane API
   description: Tractus-X EDC control-plane API Documentation
+  license:
+    name: "The Apache License, Version 2.0"
+    url: http://www.apache.org/licenses/LICENSE-2.0.txt
   version: 0.12.0-SNAPSHOT
 servers:
 - url: /
@@ -755,7 +758,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Retirement Example"
+              $ref: "#/components/schemas/RetirementExample"
       responses:
         "204":
           description: The contract agreement was successfully retired
@@ -3203,7 +3206,7 @@ components:
         sortOrder: DESC
         sortField: fieldName
         filterExpression: []
-    Retirement Example:
+    RetirementExample:
       type: object
       properties:
         '@id':
